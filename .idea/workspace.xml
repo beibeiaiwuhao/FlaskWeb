@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452297fc-016a-4307-8510-3d4943aca48b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mypyproject/hello1.py" afterPath="$PROJECT_DIR$/mypyproject/hello1.py" />
+      <change beforePath="$PROJECT_DIR$/mypyproject/hello2.py" afterPath="$PROJECT_DIR$/mypyproject/hello2.py" />
+      <change beforePath="$PROJECT_DIR$/mypyproject/templates/user.html" afterPath="$PROJECT_DIR$/mypyproject/templates/user.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="hello1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mypyproject/hello1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -40,21 +41,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mypyproject/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mypyproject/hello2.py">
+      <file leaf-file-name="macros.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mypyproject/templates/macros.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hello2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mypyproject/hello2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,10 +90,11 @@
         <option value="$PROJECT_DIR$/mypyproject/venv/app.py" />
         <option value="$PROJECT_DIR$/mypyproject/venv/hello.py" />
         <option value="$PROJECT_DIR$/mypyproject/venv/hello1.py" />
-        <option value="$PROJECT_DIR$/mypyproject/hello1.py" />
         <option value="$PROJECT_DIR$/mypyproject/templates/index.html" />
-        <option value="$PROJECT_DIR$/mypyproject/templates/user.html" />
+        <option value="$PROJECT_DIR$/mypyproject/hello1.py" />
         <option value="$PROJECT_DIR$/mypyproject/hello2.py" />
+        <option value="$PROJECT_DIR$/mypyproject/templates/macros.html" />
+        <option value="$PROJECT_DIR$/mypyproject/templates/user.html" />
       </list>
     </option>
   </component>
@@ -343,18 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mypyproject/templates/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mypyproject/hello1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -363,8 +367,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mypyproject/hello2.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypyproject/templates/macros.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypyproject/templates/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>

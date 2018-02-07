@@ -10,7 +10,7 @@ def index():
 
 @app.route('/user/<name>')
 def user(name):
-    return render_template('user.html',name=name)
+    return render_template('user.html',name=name,comments=(1,2,3,4,5,10,6,7))
 
 if __name__ == "__main__":
     app.run()
