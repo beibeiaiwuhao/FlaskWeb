@@ -1,6 +1,8 @@
 
 from flask import Flask,render_template
 from flask_bootstrap import Bootstrap
+from flask_moment import Moment
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -18,12 +20,14 @@ def bootstrapIndex(name):
 
 @app.route('/')
 def index():
-    return render_template('index1.html')
+    return render_template('index.html',current_time=datetime.utcnow())
 
 
 
 
 bootstap = Bootstrap(app)
+moment = Moment(app)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -5,17 +5,14 @@
 
 
 {% block head %}
-
 {{ super() }}
-
 <link rel="shortcut icon" href="{{url_for('static',filename='test.ico')}}" type="image/x-icon">
 <link rel="icon" href="{{url_for('static',filename = 'test.ico')}}" type="image/x-icon">
 
 {% endblock %}
 
-
-
 {% block title %}Flasky{% endblock %}
+
 
 {% block navbar %}
 
@@ -49,7 +46,10 @@
 
 
 
-
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
 
 
 

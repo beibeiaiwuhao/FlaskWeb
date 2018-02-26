@@ -1,0 +1,20 @@
+{%  extends "base.html" %}
+
+{%  import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+    表单提交
+{%  endblock %}
+
+
+
+{%  block page_content %}
+<div class="page-header">
+    <h1>你好，{% if name %}{{ name }}{%  else %}吴昊{%  endif %}</h1>
+</div>
+
+{{ wtf.quick_form(form)}}
+
+{%  endblock %}
+
+
