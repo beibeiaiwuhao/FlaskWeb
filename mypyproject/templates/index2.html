@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf%}
+
+{% block title%} Flasky {%endblock%}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello,{%if name %}{{name}}{% else %}Stranger{%endif%}</h1>
+    {% if not known%}
+    <p>Please to meet you </p>
+    {% else %}
+    <p>Happy to see you again </p>
+    {%endif%}
+
+    <!--<select>-->
+        <!--<option value="http://api.47ks.com/webcloud/?v="selected>腾讯(1080P)、芒果、优酷、乐视、搜狐、爱奇艺</option>-->
+        <!--<option value="http://v.72du.com/api/?url=">腾讯(高清)、芒果、优酷、乐视、搜狐、爱奇艺</option>-->
+        <!--<option value="http://www.wmxz.wang/B/index.php?url=">腾讯(高清)、芒果、优酷、乐视、搜狐、爱奇艺</option>-->
+        <!--<option value="http://yyygwz.com/index.php?url=">腾讯(高清)、芒果、优酷、乐视、搜狐、爱奇艺</option>-->
+        <!--<option value="http://www.vipjiexi.com/yun.php?url=">芒果、优酷、乐视、搜狐、爱奇艺</option>-->
+        <!--<option value="http://yun.zihu.tv/yunparse/index.php?url=">优酷、乐视、搜狐、爱奇艺</option>-->
+         <!--<option value="http://jx.71ki.com/index.php?url=">优酷、乐视、搜狐、爱奇艺</option>-->
+    <!--</select>-->
+
+
+</div>
+
+
+{{wtf.quick_form(form)}}
+
+{% endblock %}
+
+
