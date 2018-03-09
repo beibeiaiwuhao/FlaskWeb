@@ -1,3 +1,4 @@
+
 import os
 from flask import Flask,url_for,redirect,render_template,session
 from flask_bootstrap import Bootstrap
@@ -9,6 +10,8 @@ from wtforms import StringField,SubmitField
 from wtforms.validators import DataRequired
 from flask_script import Manager
 from threading import Thread
+from datetime import datetime
+
 
 app = Flask(__name__)
 
@@ -103,15 +106,15 @@ def index():
             db.session.add(user)
             db.session.commit()
             session['known'] = False
-            print(app.config['FLASKY_ADMIN'])
-            print(app.config['MAIL_USERNAME'])
+            # print(app.config['FLASKY_ADMIN'])
+            # print(app.config['MAIL_USERNAME'])
             if app.config['FLASKY_ADMIN']:
                 send_email(app.config['FLASKY_ADMIN'],'New User','mail/new_user',user=user)
         else:
             session['known'] = True
         session['name'] = form.name.data
         return redirect(url_for('index'))
-    return render_template('index2.html',form=form,name=session.get('name'),known=session.get('known',False))
+    return render_template('index2.html',form=form,name=session.get('name'),known=session.get('known',False),current_time=datetime.utcnow())
 
 
 
