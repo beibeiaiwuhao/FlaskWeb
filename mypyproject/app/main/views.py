@@ -4,8 +4,8 @@ from . import main
 
 from .forms import NameForm
 from .. import db
-from ..models import User,Role
-from ..email import send_email
+from app.models import User,Role
+from app.email import send_email
 
 
 @main.route('/',methods=['GET','POST'])
@@ -15,7 +15,7 @@ def index():
         user = User.query.filter_by(username=form.name.data).first()
         if user is None:
             user_role = Role(name=form.name.data)
-            user = User(username=form.name.data,role_id=user_role)
+            user = User(username=form.name.data,role_id=user_role.id)
             db.session.add(user)
             db.session.commit()
             session['known'] = False
